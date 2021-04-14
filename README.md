@@ -313,7 +313,7 @@ College Admin
            print("error!")
        }
    }
-```
+   ```
 * College settings (Display/retrieve college data from DB + Modify college data in DB)
    ```swift
    var college = [PFObject]()
