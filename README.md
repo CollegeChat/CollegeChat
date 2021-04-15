@@ -409,9 +409,56 @@ Student
     }
   ```
 * Student Posts (Retrieve chatroom posts and replies)
+
+```swift
+   let query = PFQuery(className:"Posts")
+   query.includeKeys(["sender", "content"])
+        query.limit = 20
+        query.findObjectsInBackground { (post, error) in
+            
+            if post != nil {
+                self.post = post!
+                self.tableView.reloadData()
+                
+            }
+        }
+```
 * Student New Post (Save data in DB)
+
+```swift
+   let post = PFObject(className:"Posts")
+   let post["sender"] = senderNameLabel.text
+   let post["content"] = postContentLabel.text
+   let post["timestamp"] = timeLabel.text
+   
+   post.saveInBackground { (succeeded, error)  in
+    if (succeeded) {
+        print("Post saved")
+    } else {
+        print("Error saving post")
+    }
+}
+```
 * Student Post Info (Retrieve post info/replies from DB)
 * Student Post Reply (Save reply/post info in DB)
+
+
+```swift
+   let replyToPost = PFObject(className:"Reply")
+   replyToPost["content"] = replyLabel.text
+
+   //make relation to the Posts object
+   replyToPost["post"] = post
+
+   replyToPost.saveInBackground { (succeeded, error)  in
+    if (succeeded) {
+        print("reply saved")
+    } else {
+        print("Error saving reply")
+    }
+}
+```
+
 * Student Group Chat (Retrieve messages + Save new messages)
 * Student Chat Settings (Display chatroom info + remove student from Chatroom if leave)
 * Student Messages (Display student DM messages info from DB)
@@ -467,8 +514,42 @@ Instructor
   ```
 * Instructor Posts (Retrieve chatroom posts and replies + remove posts and replies)
 * Instructor New Post (Save data in DB)
+
+```swift
+   let post = PFObject(className:"Posts")
+   let post["sender"] = senderNameLabel.text
+   let post["content"] = postContentLabel.text
+   let post["timestamp"] = timeLabel.text
+   
+   post.saveInBackground { (succeeded, error)  in
+    if (succeeded) {
+        print("Post saved")
+    } else {
+        print("Error saving post")
+    }
+}
+```
+
 * Instructor Post Info (Retrieve post info/replies from DB + delete replies)
 * Instructor Post Reply (Save reply/post info in DB)
+
+```swift
+   let replyToPost = PFObject(className:"Reply")
+   replyToPost["content"] = replyLabel.text
+
+   //make relation to the Posts object
+   replyToPost["post"] = post
+
+   replyToPost.saveInBackground { (succeeded, error)  in
+    if (succeeded) {
+        print("reply saved")
+    } else {
+        print("Error saving reply")
+    }
+}
+```
+
+
 * Instructor Group Chat (Retrieve messages + save new messages + delete messages)
 * Instructor Chat Settings (Display chatroom info + remove student from Chatroom)
 * Instructor Edit Group (Modify/Update chatroom info)
