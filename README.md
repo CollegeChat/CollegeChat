@@ -360,7 +360,7 @@ App Admin
 Student
 * Student Home (Retrieve chatrooms from Registers table from DB)
   ```swift
-      let query = PFQuery(className: "Registers")
+    let query = PFQuery(className: "Registers")
     query.includeKeys(["studentEmail"])
     query.limit = 20
     query.findObjectsInBackground { (registers, error) in
@@ -375,7 +375,7 @@ Student
   ```
 * Student Add Class (Store data in Registers table)
   ```swift
-      let registersTable = PFObject(className: "Registers")
+    let registersTable = PFObject(className: "Registers")
     
     let invite_code = inviteCodeTextField.text!
     let student_email = studentEmailTextField.text!
