@@ -359,7 +359,39 @@ App Admin
 
 Student
 * Student Home (Retrieve chatrooms from Registers table from DB)
+  ```swift
+      let query = PFQuery(className: "Registers")
+    query.includeKeys(["studentEmail"])
+    query.limit = 20
+    query.findObjectsInBackground { (registers, error) in
+         if registers != nil {
+            self.registers = registers!
+            self.tableView.reloadData()
+         }
+         else {
+            print("Error: \(error)")
+         }
+    }  
+  ```
 * Student Add Class (Store data in Registers table)
+  ```swift
+      let registersTable = PFObject(className: "Registers")
+    
+    let invite_code = inviteCodeTextField.text!
+    let student_email = studentEmailTextField.text!
+    
+    registerTable["inviteCode"] = invite_code
+    registerTable["studentEmail"] = student_email
+    
+    registerTable.saveInBackground { (success, error) in
+        if success {
+           self.dismiss(animated: true, completion: nil)
+           print("saved!")
+        } else {
+           print("error!")
+        }
+    }
+  ```
 * Student Profile (Display student data + Modify student data from DB)
 * Student Posts (Retrieve chatroom posts and replies)
 * Student New Post (Save data in DB)
