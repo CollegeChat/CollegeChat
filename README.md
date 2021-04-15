@@ -420,8 +420,51 @@ Student
 
 Instructor 
 * Instructor Home (Retrieve chatrooms from Registers table from DB)
+  ```swift
+  let query = PFQuery(className: "Registers")
+  query.includeKeys(["Email"])
+  query.limit = 20
+  query.findObjectsInBackground { (registers, error) in
+       if registers != nil {
+          self.registers = registers!
+          self.tableView.reloadData()
+       }
+       else {
+          print("Error: \(error)")
+       }
+  }  
+  ```
 * Instructor Add Class (Store data in Registers table)
+  ```swift
+    let registersTable = PFObject(className: "Registers")    
+    let invite_code = inviteCodeTextField.text!
+    
+    registerTable["inviteCode"] = invite_code    
+    registerTable.saveInBackground { (success, error) in
+        if success {
+           self.dismiss(animated: true, completion: nil)
+           print("saved!")
+        } else {
+           print("error!")
+        }
+    }
+  ```
 * Instructor Profile (Display student data + modify student data from DB)
+  ```swift
+    let instructor = PFUser()
+    instructor.firstname = firstNameTextField.text
+    instructor.lastname = lastNameTextField.text
+    instructor.dob = dobTextField.text
+    instructor.email = "email@example.com"
+    instructor.password = passwordTextField.text
+    instructor.saveInBackground { (success, error) in
+         if success {
+             self.performSegue(withIdentifier: "saveSegue", sender: nil)
+         } else {
+             print("Error: \(error?.localizedDescription)")
+         }
+    }
+  ```
 * Instructor Posts (Retrieve chatroom posts and replies + remove posts and replies)
 * Instructor New Post (Save data in DB)
 * Instructor Post Info (Retrieve post info/replies from DB + delete replies)
