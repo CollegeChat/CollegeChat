@@ -360,18 +360,18 @@ App Admin
 Student
 * Student Home (Retrieve chatrooms from Registers table from DB)
   ```swift
-    let query = PFQuery(className: "Registers")
-    query.includeKeys(["studentEmail"])
-    query.limit = 20
-    query.findObjectsInBackground { (registers, error) in
-         if registers != nil {
-            self.registers = registers!
-            self.tableView.reloadData()
-         }
-         else {
-            print("Error: \(error)")
-         }
-    }  
+  let query = PFQuery(className: "Registers")
+  query.includeKeys(["studentEmail"])
+  query.limit = 20
+  query.findObjectsInBackground { (registers, error) in
+       if registers != nil {
+          self.registers = registers!
+          self.tableView.reloadData()
+       }
+       else {
+          print("Error: \(error)")
+       }
+  }  
   ```
 * Student Add Class (Store data in Registers table)
   ```swift
@@ -393,6 +393,21 @@ Student
     }
   ```
 * Student Profile (Display student data + Modify student data from DB)
+  ```swift
+    let student = PFUser()
+    student.firstname = firstNameTextField.text
+    student.lastname = lastNameTextField.text
+    student.dob = dobTextField.text
+    student.email = "email@example.com"
+    student.password = passwordTextField.text
+    student.saveInBackground { (success, error) in
+         if success {
+             self.performSegue(withIdentifier: "saveSegue", sender: nil)
+         } else {
+             print("Error: \(error?.localizedDescription)")
+         }
+    }
+  ```
 * Student Posts (Retrieve chatroom posts and replies)
 * Student New Post (Save data in DB)
 * Student Post Info (Retrieve post info/replies from DB)
