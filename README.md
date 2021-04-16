@@ -173,7 +173,7 @@ https://xd.adobe.com/view/8d4918dc-65f3-44cb-819c-48a28f72e2a7-d81a/
 | description | String |
 | chatPic | File |
 
-**Registers**
+**Registration**
 | Property | Type |
 | -------- | ---- |
 | inviteCode | Char |
