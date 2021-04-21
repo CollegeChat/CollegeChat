@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,8 @@
 		470F299A262A43FC008CA844 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 470F2998262A43FC008CA844 /* LaunchScreen.storyboard */; };
 		470F29A5262A43FC008CA844 /* CollegeChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470F29A4262A43FC008CA844 /* CollegeChatTests.swift */; };
 		470F29B0262A43FC008CA844 /* CollegeChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470F29AF262A43FC008CA844 /* CollegeChatUITests.swift */; };
+		47B60826263002A3006FAEEE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B60825263002A3006FAEEE /* LoginViewController.swift */; };
+		47B6082B263002AD006FAEEE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B6082A263002AD006FAEEE /* SignUpViewController.swift */; };
 		678FF69411B63C0EC6F37F57 /* Pods_CollegeChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98C4DB1C5638CF5D741DE7DC /* Pods_CollegeChatTests.framework */; };
 		7381F7C181F4FE656A2EDECC /* Pods_CollegeChat_CollegeChatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6730A1B4DE305157911F51C3 /* Pods_CollegeChat_CollegeChatUITests.framework */; };
 		BF6FB679ED54EDE5EE7A416A /* Pods_CollegeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9655FCF75E9EDC16CE1A9A7 /* Pods_CollegeChat.framework */; };
@@ -53,6 +55,8 @@
 		470F29AB262A43FC008CA844 /* CollegeChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollegeChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		470F29AF262A43FC008CA844 /* CollegeChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeChatUITests.swift; sourceTree = "<group>"; };
 		470F29B1262A43FC008CA844 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47B60825263002A3006FAEEE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		47B6082A263002AD006FAEEE /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		4DBE370A57FABBF56145454A /* Pods-CollegeChat-CollegeChatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollegeChat-CollegeChatUITests.debug.xcconfig"; path = "Target Support Files/Pods-CollegeChat-CollegeChatUITests/Pods-CollegeChat-CollegeChatUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6730A1B4DE305157911F51C3 /* Pods_CollegeChat_CollegeChatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CollegeChat_CollegeChatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C4DB1C5638CF5D741DE7DC /* Pods_CollegeChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CollegeChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,7 +105,6 @@
 				3CAD14D93D1BAECD09A26C4F /* Pods-CollegeChatTests.debug.xcconfig */,
 				BB9860750605F92EEE73129B /* Pods-CollegeChatTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -137,6 +140,8 @@
 				470F2996262A43FC008CA844 /* Assets.xcassets */,
 				470F2998262A43FC008CA844 /* LaunchScreen.storyboard */,
 				470F299B262A43FC008CA844 /* Info.plist */,
+				47B60825263002A3006FAEEE /* LoginViewController.swift */,
+				47B6082A263002AD006FAEEE /* SignUpViewController.swift */,
 			);
 			path = CollegeChat;
 			sourceTree = "<group>";
@@ -407,9 +412,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47B60826263002A3006FAEEE /* LoginViewController.swift in Sources */,
 				470F2992262A43FB008CA844 /* ViewController.swift in Sources */,
 				470F298E262A43FB008CA844 /* AppDelegate.swift in Sources */,
 				470F2990262A43FB008CA844 /* SceneDelegate.swift in Sources */,
+				47B6082B263002AD006FAEEE /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
