@@ -2,7 +2,7 @@
 //  CollegeChatUITests.swift
 //  CollegeChatUITests
 //
-//  Created by Anshul Jha on 4/16/21.
+//  Created by Abdurrahman on 4/22/21.
 //
 
 import XCTest
