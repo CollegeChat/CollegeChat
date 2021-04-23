@@ -8,6 +8,7 @@ target 'CollegeChat' do
   # Pods for CollegeChat
   pod 'Parse'
   pod 'AlamofireImage'
+  
 
   target 'CollegeChatTests' do
     inherit! :search_paths

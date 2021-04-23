@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1100"
+   LastUpgradeVersion = "1240"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "82F3A7BEBBABF61142F9FDCBEB0F8470"
-               BuildableName = "Pods_CollegeChat.framework"
-               BlueprintName = "Pods-CollegeChat"
+               BlueprintIdentifier = "C9778AE8394BE451567650E0B239BA21"
+               BuildableName = "AlamofireImage.framework"
+               BlueprintName = "AlamofireImage"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  CollegeChat
 //
-//  Created by Abdurrahman on 4/22/21.
+//  Created by Anshul Jha on 4/16/21.
 //
 
 import UIKit
@@ -14,19 +14,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
         // Override point for customization after application launch.
-        
-        // --- Copy this only
-        
         let parseConfig = ParseClientConfiguration {
                 $0.applicationId = "8pMRIw5ZnWPzTuZjzBsrw4sRumuvtju6zczRdpnS" // <- UPDATE
                 $0.clientKey = "Ix2M1F8lb4q14xlG5Py2W66oNsKmoe01teHXnggS" // <- UPDATE
                 $0.server = "https://parseapi.back4app.com"
         }
         Parse.initialize(with: parseConfig)
-        
-        // --- end copy
-        
         return true
     }
 
