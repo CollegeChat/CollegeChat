@@ -1,3 +1,4 @@
+//SIGNUPVC
 //
 //  SignUpViewController.swift
 //  CollegeChat
@@ -14,6 +15,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var dateOfBirthTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
     private var datePicker: UIDatePicker?
@@ -25,6 +27,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         dateOfBirthTextField.delegate = self
         emailTextField.delegate = self
         passwordTextField.delegate = self
+        usernameTextField.delegate = self
         
         datePicker = UIDatePicker()
         datePicker?.datePickerMode = .date
@@ -56,10 +59,14 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         let user = PFUser()
         user.email = emailTextField.text
         user.password = passwordTextField.text
-        user.email = "email@example.com"
+        user.username = usernameTextField.text
+        user["accountType"] = "Student"
+        user["firstname"] = firstNameTextField.text
+        user["lastname"] = lastNameTextField.text
+        user["DOB"] = dateOfBirthTextField.text
+        
         user.signUpInBackground { (success, error) in
             if success {
-                //self.performSegue(withIdentifier: "loginSegue", sender: nil)
                 self.dismiss(animated: true, completion: nil)
             } else {
                 print("Error: \(error?.localizedDescription)")
