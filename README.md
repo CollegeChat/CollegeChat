@@ -24,7 +24,7 @@ CollegeChat is a social networking application for college students and instruct
 
 **Required Must-have Stories**
 * Common User Stories:
-  * [ ] Login/LogoutCancel changes
+  * [x] Login/LogoutCancel changes
   * [ ] chats
   * [ ] Notifications
 * Admin User Stories:
@@ -42,7 +42,7 @@ CollegeChat is a social networking application for college students and instruct
   * [ ] Chat messages to students 
   * [ ] Delete chats messages of other students
 * Student User Story:
-  * [ ] Create account
+  * [x] Create account
   * [ ] Reply to posts
   * [ ] Send direct messages other students
   * [ ] Send messages in group chat
