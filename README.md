@@ -556,4 +556,4 @@ Instructor
 * Instructor New Message (Query searched user)
 * Instructor Direct Message (Retrieve messages + Save new messages)
 
-<img src='http://g.recordit.co/RWF3TgxpSP.gif' title='Login Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/LwyNYAteCC.gif' title='Login Walkthrough' width='' alt='Video Walkthrough' />
