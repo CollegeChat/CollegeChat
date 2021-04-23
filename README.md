@@ -555,3 +555,6 @@ Instructor
 * Instructor Messages (Display student DM messages info from DB)
 * Instructor New Message (Query searched user)
 * Instructor Direct Message (Retrieve messages + Save new messages)
+
+
+http://g.recordit.co/PRi3KBWuYy.gif
