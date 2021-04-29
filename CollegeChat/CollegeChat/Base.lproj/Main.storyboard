@@ -11,7 +11,7 @@
         <!--Login View Controller-->
         <scene sceneID="Bjc-Rl-Dk4">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="mYX-Ek-93P" customClass="LoginViewController" customModule="CollegeChat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginController" modalPresentationStyle="fullScreen" id="mYX-Ek-93P" customClass="LoginViewController" customModule="CollegeChat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bw0-cr-Ngw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -55,6 +55,7 @@
                                 </state>
                                 <connections>
                                     <action selector="onSignIn:" destination="mYX-Ek-93P" eventType="touchUpInside" id="kBK-Bh-QpG"/>
+                                    <segue destination="ofo-cd-dB7" kind="show" identifier="Instructor" id="NfG-bm-DLK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jeP-6D-ayI">
@@ -114,7 +115,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="QvX-rh-xmL">
             <objects>
-                <tabBarController modalPresentationStyle="fullScreen" id="KHD-xM-FAB" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="CollegeAdminController" modalPresentationStyle="fullScreen" id="KHD-xM-FAB" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="aSF-IT-1IX"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BK1-nI-bTv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -154,10 +155,26 @@
             </objects>
             <point key="canvasLocation" x="2374" y="1273"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="X9C-qE-56w">
+            <objects>
+                <viewController id="FtE-sv-eLa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U1B-8w-YGX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="yXc-Kt-DKO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="yMF-Ur-JUG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ytT-W8-LZZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2419" y="2063"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="kJw-0D-hap">
             <objects>
-                <tabBarController modalPresentationStyle="fullScreen" id="tUC-qO-kqt" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="AppAdminController" modalPresentationStyle="fullScreen" id="tUC-qO-kqt" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="OnF-nH-1kR"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KQ3-L8-Reg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -172,10 +189,10 @@
             </objects>
             <point key="canvasLocation" x="1421" y="1273"/>
         </scene>
-        <!--Course Chats-->
+        <!--Add Class-->
         <scene sceneID="QtK-nG-dzr">
             <objects>
-                <viewController id="kxX-vd-aQq" sceneMemberID="viewController">
+                <viewController id="kxX-vd-aQq" customClass="AddClassViewController" customModule="CollegeChat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eqQ-TL-vpm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -191,16 +208,49 @@
                         <viewLayoutGuide key="safeArea" id="uZk-31-ZVK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Course Chats" id="84H-cj-3KO"/>
+                    <navigationItem key="navigationItem" title="Add Class" id="84H-cj-3KO">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="ch6-VK-CnF">
+                            <connections>
+                                <action selector="onLogout:" destination="kxX-vd-aQq" id="lmK-YT-BTK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ck-zc-xJ1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3371" y="-423"/>
+            <point key="canvasLocation" x="3564" y="-1008"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="J95-97-e0I">
+            <objects>
+                <viewController id="V6F-iH-WAb" customClass="ProfileViewController" customModule="CollegeChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Scb-4K-aKU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Something" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0z8-M7-f3K">
+                                <rect key="frame" x="138" y="211" width="139" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9d8-ST-d3e"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Profile" id="ZWM-xy-A5b">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="hOj-4I-Uqw"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JUd-p1-iDK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3563.7681159420295" y="-307.36607142857139"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="9fM-lK-h08">
             <objects>
-                <tabBarController modalPresentationStyle="fullScreen" id="yYN-LL-7Lf" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="StudnetController" modalPresentationStyle="fullScreen" id="yYN-LL-7Lf" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="aq0-cF-y3o"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dXZ-N2-sf3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -209,6 +259,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="nZJ-2t-Rmh" kind="relationship" relationship="viewControllers" id="dxi-5e-s4A"/>
+                        <segue destination="I8z-fK-3Wd" kind="relationship" relationship="viewControllers" id="XeH-Zh-EBn"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n3a-4g-Odg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -354,13 +405,13 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-22" y="840"/>
+            <point key="canvasLocation" x="-565" y="958"/>
         </scene>
-        <!--Item 1-->
+        <!--Add class-->
         <scene sceneID="YlF-KI-xIw">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nZJ-2t-Rmh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="rVo-EH-4o4"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nZJ-2t-Rmh" userLabel="Add class" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Add Class" image="plus" catalog="system" id="rVo-EH-4o4"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Av-tR-gUC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
@@ -373,12 +424,51 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d9Y-Vb-9ib" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2477" y="-423"/>
+            <point key="canvasLocation" x="2420" y="-1008"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="JkQ-lE-QAu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="I8z-fK-3Wd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="fiR-uB-DKm"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qAA-xq-Kjw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="V6F-iH-WAb" kind="relationship" relationship="rootViewController" id="Hye-dt-vDZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RfB-ln-OpH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2419" y="-307"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="9Ae-WJ-f7Q">
+            <objects>
+                <tabBarController storyboardIdentifier="InstructorController" automaticallyAdjustsScrollViewInsets="NO" id="ofo-cd-dB7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="pOk-Bk-xfd"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fOR-yh-dY2">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="FtE-sv-eLa" kind="relationship" relationship="viewControllers" id="gn0-7I-yyj"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eLX-is-qci" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1420" y="2063"/>
         </scene>
     </scenes>
     <resources>
         <image name="1024" width="1024" height="1024"/>
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

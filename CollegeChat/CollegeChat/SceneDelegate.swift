@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Parse
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -17,6 +18,35 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        //Below is the stay logged in functionality, I just put it for student scene because current now accountType is student
+        if PFUser.current() != nil {
+            let main = UIStoryboard(name: "Main", bundle: nil)
+            let user = PFUser.current()
+//            let accountType = user!["accountType"] as? String
+//            if(accountType == "App Admin") {
+//
+//                let appAdminController = main.instantiateViewController(withIdentifier: "AppAdminController")
+//                window?.rootViewController = appAdminController
+//
+//            }else if accountType == "College Admin" {
+//                let collegeAdminController = main.instantiateViewController(withIdentifier: "CollegeAdminController")
+//                window?.rootViewController = collegeAdminController
+//            } else if accountType == "Instructor" {
+//
+//                let instructorController = main.instantiateViewController(withIdentifier: "InstructorController")
+//                window?.rootViewController = instructorController
+//
+//            } else if accountType == "Student" {
+//
+//                let studentController = main.instantiateViewController(withIdentifier: "StudnetController")
+//                window?.rootViewController = studentController
+//            }
+            
+            let studentController = main.instantiateViewController(withIdentifier: "StudnetController")
+            window?.rootViewController = studentController
+            
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -50,3 +80,4 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 }
 
+}
