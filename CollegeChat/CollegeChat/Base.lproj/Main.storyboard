@@ -112,10 +112,10 @@
             </objects>
             <point key="canvasLocation" x="2300" y="487"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--College Admin Tab Bar-->
         <scene sceneID="QvX-rh-xmL">
             <objects>
-                <tabBarController storyboardIdentifier="CollegeAdminController" modalPresentationStyle="fullScreen" id="KHD-xM-FAB" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="CollegeAdminController" title="College Admin Tab Bar" modalPresentationStyle="fullScreen" id="KHD-xM-FAB" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="aSF-IT-1IX"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BK1-nI-bTv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -180,10 +180,10 @@
             </objects>
             <point key="canvasLocation" x="2419" y="2269"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--App Admin Tab Bar-->
         <scene sceneID="kJw-0D-hap">
             <objects>
-                <tabBarController storyboardIdentifier="AppAdminController" modalPresentationStyle="fullScreen" id="tUC-qO-kqt" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="AppAdminController" title="App Admin Tab Bar" modalPresentationStyle="fullScreen" id="tUC-qO-kqt" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="OnF-nH-1kR"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KQ3-L8-Reg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -206,13 +206,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Student Sequence" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dY1-st-xUG">
-                                <rect key="frame" x="119" y="154" width="177" height="108"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Invitation Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tr-F6-cxv">
+                                <rect key="frame" x="150" y="158" width="115" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rcR-YX-j0k">
+                                <rect key="frame" x="120" y="226" width="174" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FvQ-DB-0qa">
+                                <rect key="frame" x="192" y="296" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uZk-31-ZVK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -227,20 +238,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ck-zc-xJ1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3564" y="-1008"/>
+            <point key="canvasLocation" x="3563.7681159420295" y="-1008.4821428571428"/>
         </scene>
         <!--Edit Account-->
         <scene sceneID="J95-97-e0I">
             <objects>
-                <viewController id="V6F-iH-WAb" customClass="ProfileViewController" customModule="CollegeChat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="V6F-iH-WAb" customClass="ProfileViewController" customModule="CollegeChat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Scb-4K-aKU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FG5-Pm-blo">
-                                <rect key="frame" x="0.0" y="56" width="169" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAF-iH-mMY">
                                 <rect key="frame" x="36" y="195" width="97" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -310,28 +317,64 @@
                                 <rect key="frame" x="284" y="674" width="105" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Delete Account"/>
+                                <connections>
+                                    <action selector="onDeleted:" destination="V6F-iH-WAb" eventType="touchUpInside" id="jo7-7R-SSu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDG-1t-Bf4">
                                 <rect key="frame" x="36" y="674" width="98" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Save Changes"/>
+                                <connections>
+                                    <action selector="onSaved:" destination="V6F-iH-WAb" eventType="touchUpInside" id="F2s-uE-EFw"/>
+                                </connections>
                             </button>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="dkG-1y-oC7">
+                                <rect key="frame" x="21" y="56" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ASQ-LA-YU8" appends="YES" id="Ria-b8-Smm"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9d8-ST-d3e"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Edit Account" id="ZWM-xy-A5b">
-                        <barButtonItem key="rightBarButtonItem" title="Logout" id="hOj-4I-Uqw"/>
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="hOj-4I-Uqw">
+                            <connections>
+                                <action selector="onLogout:" destination="V6F-iH-WAb" id="fQk-0g-qQ7"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="changePassward" destination="ENx-N1-lsm" id="Lkl-G6-6T4"/>
+                        <outlet property="changePasswardTextField" destination="mWC-n6-LcY" id="Ntx-w9-s1u"/>
+                        <outlet property="dateOfBirth" destination="qI5-Io-8C7" id="FEq-mH-AjQ"/>
+                        <outlet property="dobTextField" destination="8ew-9k-cqa" id="ZKZ-Kh-Nqp"/>
+                        <outlet property="firstName" destination="iAF-iH-mMY" id="Ela-7S-CBy"/>
+                        <outlet property="firstNameTextField" destination="F0D-gp-MVX" id="mF1-3t-3KD"/>
+                        <outlet property="lastName" destination="ljo-XS-5xX" id="zuZ-bh-O8q"/>
+                        <outlet property="lastNameTextField" destination="PZL-rn-zYA" id="mgB-Qc-nYF"/>
+                        <outlet property="studentPP" destination="dkG-1y-oC7" id="x4w-TL-NoX"/>
+                        <outlet property="userNameTextField" destination="dGy-rt-QLm" id="pbv-XK-Pzy"/>
+                        <outlet property="username" destination="uZI-AR-nfj" id="7NP-lW-AyO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JUd-p1-iDK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ASQ-LA-YU8">
+                    <connections>
+                        <action selector="tapOnImage:" destination="V6F-iH-WAb" id="SqN-DC-9Ak"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3563.7681159420295" y="-307.36607142857139"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Student Tab Bar -->
         <scene sceneID="9fM-lK-h08">
             <objects>
-                <tabBarController storyboardIdentifier="StudnetController" modalPresentationStyle="fullScreen" id="yYN-LL-7Lf" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="StudnetController" title="Student Tab Bar " modalPresentationStyle="fullScreen" id="yYN-LL-7Lf" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="aq0-cF-y3o"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dXZ-N2-sf3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -510,7 +553,7 @@
         <!--Profile-->
         <scene sceneID="JkQ-lE-QAu">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="I8z-fK-3Wd" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="I8z-fK-3Wd" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="fiR-uB-DKm"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qAA-xq-Kjw">
@@ -526,10 +569,10 @@
             </objects>
             <point key="canvasLocation" x="2419" y="-307"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Instructor Tab Bar-->
         <scene sceneID="9Ae-WJ-f7Q">
             <objects>
-                <tabBarController storyboardIdentifier="InstructorController" automaticallyAdjustsScrollViewInsets="NO" id="ofo-cd-dB7" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="InstructorController" title="Instructor Tab Bar" automaticallyAdjustsScrollViewInsets="NO" id="ofo-cd-dB7" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="pOk-Bk-xfd"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fOR-yh-dY2">
@@ -548,6 +591,7 @@
     <resources>
         <image name="1024" width="1024" height="1024"/>
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <image name="image_placeholder" width="375" height="375"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="labelColor">
