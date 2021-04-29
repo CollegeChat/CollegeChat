@@ -103,8 +103,8 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
         
         user?.saveInBackground{ (success, error) in
             if success {
-                print("Saved")
-                
+                let addclasscontroller = AddClassViewController()
+                addclasscontroller.logout()
             } else {
                 print("Error")
             }
@@ -113,8 +113,21 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
     }
     
     @IBAction func onDeleted(_ sender: Any) {
+      
+        PFUser.current()?.deleteInBackground { (success, error) in
+            
+            if success {
+                let addclasscontroller = AddClassViewController()
+                addclasscontroller.logout()
+                
+            }else{
+                print("Error!")
+            }
+            
+        }
         
     }
+    
     
     
     /*

@@ -22,7 +22,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         //Below is the stay logged in functionality, I just put it for student scene because current now accountType is student
         if PFUser.current() != nil {
             let main = UIStoryboard(name: "Main", bundle: nil)
-            let user = PFUser.current()
+            let studentController = main.instantiateViewController(withIdentifier: "StudnetController")
+            window?.rootViewController = studentController
+        }
+        
+        
 //            let accountType = user!["accountType"] as? String
 //            if(accountType == "App Admin") {
 //
@@ -43,11 +47,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //                window?.rootViewController = studentController
 //            }
             
-            let studentController = main.instantiateViewController(withIdentifier: "StudnetController")
-            window?.rootViewController = studentController
-            
-        
-    }
+        }
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
@@ -77,7 +77,5 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 
-
-}
 
 }
