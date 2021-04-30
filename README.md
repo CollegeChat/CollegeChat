@@ -557,3 +557,7 @@ Instructor
 * Instructor Direct Message (Retrieve messages + Save new messages)
 
 <img src='http://g.recordit.co/LwyNYAteCC.gif' title='Login Walkthrough' width='' alt='Video Walkthrough' />
+
+App Admin Progress
+<img src='http://g.recordit.co/6eFyGTGqGo.gif' title='Login Walkthrough' width='' alt='Video Walkthrough' />
+
