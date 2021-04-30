@@ -559,5 +559,5 @@ Instructor
 <img src='http://g.recordit.co/LwyNYAteCC.gif' title='Login Walkthrough' width='' alt='Video Walkthrough' />
 
 App Admin Progress
-<img src='http://g.recordit.co/6eFyGTGqGo.gif' title='Login Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/6eFyGTGqGo.gif' title='App Admin Walkthrough' width='' alt='Video Walkthrough' />
 
