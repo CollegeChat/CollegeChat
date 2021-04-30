@@ -201,7 +201,7 @@
         <!--Add Class-->
         <scene sceneID="QtK-nG-dzr">
             <objects>
-                <viewController id="kxX-vd-aQq" customClass="AddClassViewController" customModule="CollegeChat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddClassNavigationController" id="kxX-vd-aQq" customClass="AddClassViewController" customModule="CollegeChat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eqQ-TL-vpm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -242,12 +242,11 @@
                         <outlet property="codeTextField" destination="rcR-YX-j0k" id="zl3-j1-Pez"/>
                         <outlet property="invitationCode" destination="9tr-F6-cxv" id="tyZ-N0-MBc"/>
                         <segue destination="PAQ-9a-sll" kind="presentation" id="ULR-xP-Epg"/>
-                        <segue destination="lde-hn-SdP" kind="show" id="ohf-6B-OZA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ck-zc-xJ1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3563.7681159420295" y="-1008.4821428571428"/>
+            <point key="canvasLocation" x="3564" y="-1008"/>
         </scene>
         <!--Post-->
         <scene sceneID="WtM-yi-tmD">
@@ -278,7 +277,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="SBY-jg-ibo">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ClassTableViewCell" rowHeight="100" id="SBY-jg-ibo" customClass="ClassTableViewCell" customModule="CollegeChat" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SBY-jg-ibo" id="VPU-Rr-r1V">
@@ -295,6 +294,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="courseLabel" destination="k0g-99-186" id="NeU-DU-rPC"/>
                                             <segue destination="ZSb-Gx-EbL" kind="show" id="wvV-OQ-43Q"/>
                                         </connections>
                                     </tableViewCell>
@@ -305,6 +305,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Class List" id="xxO-Ea-dze">
+                        <barButtonItem key="leftBarButtonItem" title="Back" image="chevron.backward" catalog="system" id="y8o-vS-K2Z">
+                            <connections>
+                                <action selector="backToAdd:" destination="lde-hn-SdP" id="jdg-6n-waH"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="4ZT-Yx-FRF"/>
                     </navigationItem>
                     <connections>
@@ -722,7 +727,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="px4-kG-yvS"/>
         <segue reference="wvV-OQ-43Q"/>
     </inferredMetricsTieBreakers>
     <resources>

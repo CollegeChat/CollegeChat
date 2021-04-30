@@ -9,6 +9,7 @@ import UIKit
 
 class ClassTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var courseLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
