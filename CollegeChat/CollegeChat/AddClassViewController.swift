@@ -10,6 +10,10 @@ import Parse
 
 class AddClassViewController: UIViewController {
 
+    @IBOutlet weak var invitationCode: UILabel!
+    
+    @IBOutlet weak var codeTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -35,6 +39,13 @@ class AddClassViewController: UIViewController {
         }
         delegate.window?.rootViewController = LoginController
     }
+    
+    @IBAction func onClassAdded(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let classListController = storyBoard.instantiateViewController(withIdentifier: "ClassListController")
+        self.present(classListController, animated:true, completion:nil)
+    }
+    
     
     
     /*
