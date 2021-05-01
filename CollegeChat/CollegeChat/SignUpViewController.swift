@@ -69,7 +69,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
             if success {
                 self.dismiss(animated: true, completion: nil)
             } else {
-                print("Error: \(error?.localizedDescription)")
+                print("Error: \(String(describing: error?.localizedDescription))")
             }
         }
     }

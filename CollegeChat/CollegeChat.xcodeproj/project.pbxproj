@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		153E0D47263B98C900D113EE /* AppAdminHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153E0D46263B98C900D113EE /* AppAdminHomeViewController.swift */; };
 		153E0D4C263B993A00D113EE /* AppAdminHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153E0D4B263B993A00D113EE /* AppAdminHomeTableViewCell.swift */; };
+		1574E1F9263CAF3500BAF522 /* AppAdminUsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1574E1F8263CAF3500BAF522 /* AppAdminUsersTableViewCell.swift */; };
+		1574E206263CB17C00BAF522 /* AppAdminUsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1574E205263CB17C00BAF522 /* AppAdminUsersTableViewController.swift */; };
+		1574E22C263CB9E900BAF522 /* AppAdminUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1574E22B263CB9E900BAF522 /* AppAdminUsersViewController.swift */; };
+		1574E23C263CC4B000BAF522 /* AppAdminEditUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1574E23B263CC4B000BAF522 /* AppAdminEditUserViewController.swift */; };
+		1574E24C263CD5B000BAF522 /* AppAdminViewAppAdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1574E24B263CD5B000BAF522 /* AppAdminViewAppAdminViewController.swift */; };
+		1574E251263CDA7A00BAF522 /* AppAdminCreateAppAdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1574E250263CDA7A00BAF522 /* AppAdminCreateAppAdminViewController.swift */; };
 		470F298E262A43FB008CA844 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470F298D262A43FB008CA844 /* AppDelegate.swift */; };
 		470F2990262A43FB008CA844 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470F298F262A43FB008CA844 /* SceneDelegate.swift */; };
 		470F2992262A43FB008CA844 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470F2991262A43FB008CA844 /* ViewController.swift */; };
@@ -44,6 +50,12 @@
 /* Begin PBXFileReference section */
 		153E0D46263B98C900D113EE /* AppAdminHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppAdminHomeViewController.swift; path = ../../../../../AppAdminHomeViewController.swift; sourceTree = "<group>"; };
 		153E0D4B263B993A00D113EE /* AppAdminHomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAdminHomeTableViewCell.swift; sourceTree = "<group>"; };
+		1574E1F8263CAF3500BAF522 /* AppAdminUsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAdminUsersTableViewCell.swift; sourceTree = "<group>"; };
+		1574E205263CB17C00BAF522 /* AppAdminUsersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAdminUsersTableViewController.swift; sourceTree = "<group>"; };
+		1574E22B263CB9E900BAF522 /* AppAdminUsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAdminUsersViewController.swift; sourceTree = "<group>"; };
+		1574E23B263CC4B000BAF522 /* AppAdminEditUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAdminEditUserViewController.swift; sourceTree = "<group>"; };
+		1574E24B263CD5B000BAF522 /* AppAdminViewAppAdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAdminViewAppAdminViewController.swift; sourceTree = "<group>"; };
+		1574E250263CDA7A00BAF522 /* AppAdminCreateAppAdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAdminCreateAppAdminViewController.swift; sourceTree = "<group>"; };
 		3CAD14D93D1BAECD09A26C4F /* Pods-CollegeChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollegeChatTests.debug.xcconfig"; path = "Target Support Files/Pods-CollegeChatTests/Pods-CollegeChatTests.debug.xcconfig"; sourceTree = "<group>"; };
 		470F298A262A43FB008CA844 /* CollegeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollegeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		470F298D262A43FB008CA844 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -148,6 +160,12 @@
 				47B6082A263002AD006FAEEE /* SignUpViewController.swift */,
 				153E0D46263B98C900D113EE /* AppAdminHomeViewController.swift */,
 				153E0D4B263B993A00D113EE /* AppAdminHomeTableViewCell.swift */,
+				1574E1F8263CAF3500BAF522 /* AppAdminUsersTableViewCell.swift */,
+				1574E205263CB17C00BAF522 /* AppAdminUsersTableViewController.swift */,
+				1574E22B263CB9E900BAF522 /* AppAdminUsersViewController.swift */,
+				1574E23B263CC4B000BAF522 /* AppAdminEditUserViewController.swift */,
+				1574E24B263CD5B000BAF522 /* AppAdminViewAppAdminViewController.swift */,
+				1574E250263CDA7A00BAF522 /* AppAdminCreateAppAdminViewController.swift */,
 			);
 			path = CollegeChat;
 			sourceTree = "<group>";
@@ -419,9 +437,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				47B60826263002A3006FAEEE /* LoginViewController.swift in Sources */,
+				1574E206263CB17C00BAF522 /* AppAdminUsersTableViewController.swift in Sources */,
+				1574E23C263CC4B000BAF522 /* AppAdminEditUserViewController.swift in Sources */,
 				470F2992262A43FB008CA844 /* ViewController.swift in Sources */,
+				1574E22C263CB9E900BAF522 /* AppAdminUsersViewController.swift in Sources */,
+				1574E24C263CD5B000BAF522 /* AppAdminViewAppAdminViewController.swift in Sources */,
 				470F298E262A43FB008CA844 /* AppDelegate.swift in Sources */,
 				470F2990262A43FB008CA844 /* SceneDelegate.swift in Sources */,
+				1574E1F9263CAF3500BAF522 /* AppAdminUsersTableViewCell.swift in Sources */,
+				1574E251263CDA7A00BAF522 /* AppAdminCreateAppAdminViewController.swift in Sources */,
 				153E0D4C263B993A00D113EE /* AppAdminHomeTableViewCell.swift in Sources */,
 				153E0D47263B98C900D113EE /* AppAdminHomeViewController.swift in Sources */,
 				47B6082B263002AD006FAEEE /* SignUpViewController.swift in Sources */,
