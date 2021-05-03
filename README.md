@@ -28,12 +28,11 @@ CollegeChat is a social networking application for college students and instruct
   * [x] Register
 * App Admin
   * [x] View app statistics
-  * [ ] View colleges
-  * [ ] Add college
-  * [ ] Edit college
-  * [ ] Delete college
-  * [ ] Add college admin
-  * [ ] Edit college admin
+  * [x] View colleges
+  * [x] Add college
+  * [x] Edit college
+  * [x] Delete college
+  * [x] Add college admin
   * [x] View app admins list
   * [x] View app admin
   * [x] Add app admin
