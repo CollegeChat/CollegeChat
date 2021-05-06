@@ -1,13 +1,13 @@
 //
-//  ClassTableViewCell.swift
+//  StudentClassTableViewCell.swift
 //  CollegeChat
 //
-//  Created by Mahmuda Akter on 4/29/21.
+//  Created by Mahmuda Akter on 5/2/21.
 //
 
 import UIKit
 
-class ClassTableViewCell: UITableViewCell {
+class StudentClassTableViewCell: UITableViewCell {
 
     @IBOutlet weak var courseLabel: UILabel!
     override func awakeFromNib() {

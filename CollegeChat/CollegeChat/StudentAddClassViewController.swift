@@ -14,6 +14,9 @@ class AddClassViewController: UIViewController {
     
     @IBOutlet weak var codeTextField: UITextField!
     
+    var classList = Set<String>()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -41,11 +44,41 @@ class AddClassViewController: UIViewController {
     }
     
     @IBAction func onClassAdded(_ sender: Any) {
-        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-        let classListController = storyBoard.instantiateViewController(withIdentifier: "ClassListController")
-        self.present(classListController, animated:true, completion:nil)
+        let user = PFUser.current()!
+        let inviteCode = codeTextField.text!
+        let query = PFQuery(className: "Chatroom")
+        query.whereKey("inviteCode", equalTo: inviteCode)
+       
+        query.getFirstObjectInBackground {(chatroomObject: PFObject?, error: Error?) in
+            if let error = error {
+                print(error.localizedDescription)
+            } else if let chatroomObject = chatroomObject {
+                let course = chatroomObject["chatName"] as! String
+                print(course)
+                self.classList.insert(course)
+                user.addUniqueObjects(from: [course], forKey:"CourseList")
+                user.saveInBackground()
+
+                print(self.classList)
+                self.performSegue(withIdentifier: "addsegue", sender: self)
+            }
+            
+        }
+
+        
     }
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        
+        let classListTableCell = segue.destination as! StudentClassListViewController
+        classListTableCell.course = classList
+    }
+    
+}
+
     
     
     /*
@@ -58,4 +91,3 @@ class AddClassViewController: UIViewController {
     }
     */
 
-}

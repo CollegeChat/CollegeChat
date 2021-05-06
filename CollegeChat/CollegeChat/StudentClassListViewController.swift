@@ -8,13 +8,13 @@
 import UIKit
 import Parse
 
-class ClassListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class StudentClassListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     
     
     @IBOutlet weak var classListTableView: UITableView!
     
-    
+    var course = Set<String>()
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -22,37 +22,27 @@ class ClassListViewController: UIViewController, UITableViewDataSource, UITableV
         classListTableView.delegate = self
         classListTableView.dataSource = self
         
-        
-        
         classListTableView.reloadData()
-        
-        
-
+    
         // Do any additional setup after loading the view.
         
     }
     
     
-    @IBAction func backToAdd(_ sender: UIBarButtonItem) {
-        
-        let main = UIStoryboard(name: "Main", bundle: nil)
-        let addClassScreen = main.instantiateViewController(withIdentifier: "StudnetController")
-        self.present(addClassScreen, animated: true, completion: nil)
-    }
-    
-    
-    
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
+        return course.count
     }
     
     
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = classListTableView.dequeueReusableCell(withIdentifier: "ClassTableViewCell") as! ClassTableViewCell
-        cell.courseLabel?.text = "row: \(indexPath.row)"
+        let cell = classListTableView.dequeueReusableCell(withIdentifier: "StudentClassTableViewCell") as! StudentClassTableViewCell
+        
+        let courseList = course.map {$0}
+        
+        cell.courseLabel.text = courseList[indexPath.row]
+
         return cell
         
     }
