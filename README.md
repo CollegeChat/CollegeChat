@@ -66,9 +66,9 @@ CollegeChat is a social networking application for college students and instruct
   * [ ] Refresh invite code
   * [ ] Delete chat
 * Student
-  * [ ] View classes
-  * [ ] Add class
-  * [ ] View & modify profile
+  * [x] View classes
+  * [x] Add class
+  * [x] View & modify profile
   * [ ] Posts: View class posts
   * [ ] Posts: Add new post
   * [ ] Posts: View particular post with replies
