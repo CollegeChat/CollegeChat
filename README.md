@@ -23,29 +23,64 @@ CollegeChat is a social networking application for college students and instruct
 ### 1. User Stories (Required and Optional)
 
 **Required Must-have Stories**
-* Common User Stories:
-  * [x] Login/LogoutCancel changes
-  * [ ] chats
-  * [ ] Notifications
-* Admin User Stories:
-  * [ ] Add and edit colleges 
-* College User Stories:
-  * [ ] Create individual rooms for each class/club/organization 
-  * [ ] Name rooms
-  * [ ] Reset rooms 
-  * [ ] Assign professor/group admin to classes via code/email
-* Instructor User Story:
-  * [ ] Invite students by class code/email (with college + class identifier) 
-  * [ ] Remove students
-  * [ ] Post on bulletin board
-  * [ ] Delete posts of self and other students
-  * [ ] Chat messages to students 
-  * [ ] Delete chats messages of other students
-* Student User Story:
-  * [x] Create account
-  * [ ] Reply to posts
-  * [ ] Send direct messages other students
-  * [ ] Send messages in group chat
+* General User
+  * [x] Login
+  * [x] Register
+* App Admin
+  * [x] View app statistics
+  * [x] View colleges
+  * [x] Add college
+  * [x] Edit college
+  * [x] Delete college
+  * [x] Add college admin
+  * [x] View app admins list
+  * [x] View app admin
+  * [x] Add app admin
+  * [x] View users list
+  * [x] View user
+* College Admin
+  * [ ] View classes
+  * [ ] Add class
+  * [ ] Edit class
+  * [ ] Edit college settings
+* Instructor
+  * [ ] View classes
+  * [ ] Add class
+  * [ ] View & modify profile
+  * [ ] Posts: View class posts
+  * [ ] Posts: Add new post
+  * [ ] Posts: View particular post with replies
+  * [ ] Posts: Reply to post
+  * [ ] Posts: Delete post with threaded replies
+  * [ ] Posts: Delete reply
+  * [ ] Group chat: View messages
+  * [ ] Group chat: Send message
+  * [ ] Group chat: Delete message
+  * [ ] DM: View previous DM chats
+  * [ ] DM: DM a new user in class
+  * [ ] DM: View particular DM chat
+  * [ ] DM: Send a DM
+  * [ ] View chat info
+  * [ ] Remove student
+  * [ ] Edit chat info
+  * [ ] Refresh invite code
+  * [ ] Delete chat
+* Student
+  * [x] View classes
+  * [x] Add class
+  * [x] View & modify profile
+  * [ ] Posts: View class posts
+  * [ ] Posts: Add new post
+  * [ ] Posts: View particular post with replies
+  * [ ] Posts: Reply to post
+  * [ ] Group chat: View messages
+  * [ ] Group chat: Send message
+  * [ ] DM: View previous DM chats
+  * [ ] DM: DM a new user in class
+  * [ ] DM: View particular DM chat
+  * [ ] DM: Send a DM
+  * [ ] View chat info
+  * [ ] Leave chat
 
 **Optional Nice-to-have Stories**
 * Partially reset room
@@ -183,6 +218,7 @@ https://xd.adobe.com/view/8d4918dc-65f3-44cb-819c-48a28f72e2a7-d81a/
 | Property | Type |
 | -------- | ---- |
 | postID | Char |
+| classID | Char |
 | sender | String | 
 | postFile | File |
 | content | String |
@@ -193,6 +229,7 @@ https://xd.adobe.com/view/8d4918dc-65f3-44cb-819c-48a28f72e2a7-d81a/
 | Property | Type |
 | -------- | ---- |
 | messageID | Char |
+| classID | Char |
 | sender | String | 
 | receiver | String |
 | content | String |
@@ -556,4 +593,20 @@ Instructor
 * Instructor New Message (Query searched user)
 * Instructor Direct Message (Retrieve messages + Save new messages)
 
+
+Login Progress
+
 <img src='http://g.recordit.co/LwyNYAteCC.gif' title='Login Walkthrough' width='' alt='Video Walkthrough' />
+
+
+App Admin Progress
+
+<img src='http://g.recordit.co/BzdLxNBtEH.gif' title='App Admin Walkthrough' width='' alt='Video Walkthrough' />
+
+
+App Admin Completed
+
+<img src='https://recordit.co/d7RD3MOuWy.gif' title='App Admin Walkthrough' width='' alt='Video Walkthrough' />
+
+College Admin Completed
+<img src='http://g.recordit.co/3AwVBWwiHw.gif' title='App Admin Walkthrough' width='' alt='Video Walkthrough' />
