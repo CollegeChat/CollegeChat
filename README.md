@@ -591,12 +591,19 @@ Instructor
 * Instructor New Message (Query searched user)
 * Instructor Direct Message (Retrieve messages + Save new messages)
 
-<img src='http://g.recordit.co/LwyNYAteCC.gif' title='Login Walkthrough' width='' alt='Video Walkthrough' />
 
+Login Progress
+
+<img src='http://g.recordit.co/LwyNYAteCC.gif' title='Login Walkthrough' width='' alt='Video Walkthrough' />
 
 
 App Admin Progress
 
-
 <img src='http://g.recordit.co/BzdLxNBtEH.gif' title='App Admin Walkthrough' width='' alt='Video Walkthrough' />
+
+
+App Admin Completed
+
+<img src='https://recordit.co/d7RD3MOuWy.gif' title='App Admin Walkthrough' width='' alt='Video Walkthrough' />
+
 
