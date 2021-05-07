@@ -69,10 +69,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
             if success {
                 self.dismiss(animated: true, completion: nil)
             } else {
-               // print("Error: \(error?.localizedDescription)")
-                if let descrip = error?.localizedDescription {
-                    self.displayErrorMessage(message: descrip)
-                }
+                print("Error: \(error?.localizedDescription)")
             }
         }
     }
@@ -81,16 +78,4 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     @IBAction func loginBackButton(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
-    
-    func displayErrorMessage(message:String) {
-         let alertView = UIAlertController(title: "Error!", message: message, preferredStyle: .alert)
-         let OKAction = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction) in
-         }
-         alertView.addAction(OKAction)
-         if let presenter = alertView.popoverPresentationController {
-             presenter.sourceView = self.view
-             presenter.sourceRect = self.view.bounds
-         }
-         self.present(alertView, animated: true, completion:nil)
-     }
 }
