@@ -37,15 +37,12 @@ class AppAdminHomeViewController: ViewController, UITableViewDelegate, UITableVi
         if indexPath.row == 0 {
             // Users
             header = "Users"
-            let query = PFQuery(className:"User")
-            query.countObjectsInBackground { (count: Int32, error: Error?) in
-                if let error = error {
-                    // The request failed
-                    print(error.localizedDescription)
-                } else {
-                    cell.infoLabel.text = String(count)
-                    // print("\(count) objects found!")
-                }
+            let query = PFUser.query()
+            do {
+                let users = try query?.findObjects()
+                cell.infoLabel.text = String(users!.count)
+            } catch  {
+              print(error)
             }
         } else if indexPath.row == 1 {
             // Colleges
