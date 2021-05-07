@@ -282,7 +282,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Refresh"/>
                                 <connections>
-                                    <action selector="onRefreshInviteCode:" destination="1ny-jm-G5p" eventType="touchUpInside" id="uhX-85-1yu"/>
+                                    <action selector="onRefreshInviteCode:" destination="1ny-jm-G5p" eventType="touchUpInside" id="S3D-l9-IDz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tWc-ax-5m6">
@@ -303,7 +303,7 @@
                                 <connections>
                                     <action selector="onAddClass:" destination="uqH-Ve-GQe" eventType="touchUpInside" id="sH1-LW-AYR"/>
                                     <action selector="onSave:" destination="6zG-t8-QEd" eventType="touchUpInside" id="5H0-lo-iaf"/>
-                                    <action selector="onSave:" destination="1ny-jm-G5p" eventType="touchUpInside" id="Peo-7o-A3t"/>
+                                    <action selector="onSave:" destination="1ny-jm-G5p" eventType="touchUpInside" id="Jye-us-IUC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lNp-PU-3my">
@@ -323,7 +323,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onAddClass:" destination="uqH-Ve-GQe" eventType="touchUpInside" id="Alu-ad-7Je"/>
-                                    <action selector="onDelete:" destination="1ny-jm-G5p" eventType="touchUpInside" id="4Qb-ac-z7L"/>
+                                    <action selector="onDelete:" destination="1ny-jm-G5p" eventType="touchUpInside" id="sLX-4s-Wju"/>
                                     <action selector="onDeleteClasses:" destination="6zG-t8-QEd" eventType="touchUpInside" id="kTZ-AN-IvV"/>
                                 </connections>
                             </button>
@@ -339,9 +339,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Edit Class" id="4rJ-zN-WwB"/>
                     <connections>
-                        <outlet property="classNameTextField" destination="rLa-l6-1Hv" id="Iy1-QS-HeB"/>
-                        <outlet property="instructorEmailTextField" destination="oUd-8r-Sn6" id="stx-Jo-Yxk"/>
-                        <outlet property="inviteLabel" destination="vNa-kD-4mf" id="Fea-EF-ZaL"/>
+                        <outlet property="classNameTextField" destination="rLa-l6-1Hv" id="Gr8-FJ-lHD"/>
+                        <outlet property="instructorEmailTextField" destination="oUd-8r-Sn6" id="FVm-8n-Od3"/>
+                        <outlet property="inviteCodeLabel" destination="vNa-kD-4mf" id="zuL-uk-278"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JC6-4I-EkO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

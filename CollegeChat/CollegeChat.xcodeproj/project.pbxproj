@@ -17,7 +17,7 @@
 		470F29B0262A43FC008CA844 /* CollegeChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470F29AF262A43FC008CA844 /* CollegeChatUITests.swift */; };
 		473E0D37263BF06E00A8F131 /* AddClassCollegeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473E0D36263BF06E00A8F131 /* AddClassCollegeViewController.swift */; };
 		473E0D39263C8AAB00A8F131 /* CollegeSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473E0D38263C8AAB00A8F131 /* CollegeSettingsViewController.swift */; };
-		473E0D3B2644C4EC00A8F131 /* CollegeEditClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473E0D3A2644C4EC00A8F131 /* CollegeEditClassViewController.swift */; };
+		473E0D3F2644F81B00A8F131 /* CollegeClassDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473E0D3E2644F81B00A8F131 /* CollegeClassDetailsViewController.swift */; };
 		47B60826263002A3006FAEEE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B60825263002A3006FAEEE /* LoginViewController.swift */; };
 		47B6082B263002AD006FAEEE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B6082A263002AD006FAEEE /* SignUpViewController.swift */; };
 		47F3E5B2263BE2E2005DB696 /* CollegeAdminTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F3E5B1263BE2E2005DB696 /* CollegeAdminTableViewCell.swift */; };
@@ -62,7 +62,7 @@
 		470F29B1262A43FC008CA844 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		473E0D36263BF06E00A8F131 /* AddClassCollegeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClassCollegeViewController.swift; sourceTree = "<group>"; };
 		473E0D38263C8AAB00A8F131 /* CollegeSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeSettingsViewController.swift; sourceTree = "<group>"; };
-		473E0D3A2644C4EC00A8F131 /* CollegeEditClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeEditClassViewController.swift; sourceTree = "<group>"; };
+		473E0D3E2644F81B00A8F131 /* CollegeClassDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeClassDetailsViewController.swift; sourceTree = "<group>"; };
 		47B60825263002A3006FAEEE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		47B6082A263002AD006FAEEE /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		47F3E5B1263BE2E2005DB696 /* CollegeAdminTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeAdminTableViewCell.swift; sourceTree = "<group>"; };
@@ -156,7 +156,7 @@
 				47F3E5B3263BE6BC005DB696 /* CollegeAdminTableViewController.swift */,
 				473E0D36263BF06E00A8F131 /* AddClassCollegeViewController.swift */,
 				473E0D38263C8AAB00A8F131 /* CollegeSettingsViewController.swift */,
-				473E0D3A2644C4EC00A8F131 /* CollegeEditClassViewController.swift */,
+				473E0D3E2644F81B00A8F131 /* CollegeClassDetailsViewController.swift */,
 			);
 			path = CollegeChat;
 			sourceTree = "<group>";
@@ -428,7 +428,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				47B60826263002A3006FAEEE /* LoginViewController.swift in Sources */,
-				473E0D3B2644C4EC00A8F131 /* CollegeEditClassViewController.swift in Sources */,
 				470F2992262A43FB008CA844 /* ViewController.swift in Sources */,
 				47F3E5B4263BE6BC005DB696 /* CollegeAdminTableViewController.swift in Sources */,
 				470F298E262A43FB008CA844 /* AppDelegate.swift in Sources */,
@@ -436,6 +435,7 @@
 				470F2990262A43FB008CA844 /* SceneDelegate.swift in Sources */,
 				473E0D37263BF06E00A8F131 /* AddClassCollegeViewController.swift in Sources */,
 				47B6082B263002AD006FAEEE /* SignUpViewController.swift in Sources */,
+				473E0D3F2644F81B00A8F131 /* CollegeClassDetailsViewController.swift in Sources */,
 				47F3E5B2263BE2E2005DB696 /* CollegeAdminTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
