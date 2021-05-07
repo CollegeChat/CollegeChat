@@ -26,6 +26,8 @@
 		A1A8100E263EEC0B004F33B4 /* StudentClassTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A8100D263EEC0B004F33B4 /* StudentClassTableViewCell.swift */; };
 		A1A8101B26444F7F004F33B4 /* StudentClasslistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A8101A26444F7F004F33B4 /* StudentClasslistTableViewCell.swift */; };
 		A1A8102026445020004F33B4 /* StudentClassesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A8101F26445020004F33B4 /* StudentClassesViewController.swift */; };
+		A1A810252644DA8F004F33B4 /* StudentPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A810242644DA8F004F33B4 /* StudentPostTableViewCell.swift */; };
+		A1A8102A26450877004F33B4 /* StudentPostWriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A8102926450876004F33B4 /* StudentPostWriteViewController.swift */; };
 		BF6FB679ED54EDE5EE7A416A /* Pods_CollegeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9655FCF75E9EDC16CE1A9A7 /* Pods_CollegeChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +76,8 @@
 		A1A8100D263EEC0B004F33B4 /* StudentClassTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentClassTableViewCell.swift; sourceTree = "<group>"; };
 		A1A8101A26444F7F004F33B4 /* StudentClasslistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentClasslistTableViewCell.swift; sourceTree = "<group>"; };
 		A1A8101F26445020004F33B4 /* StudentClassesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentClassesViewController.swift; sourceTree = "<group>"; };
+		A1A810242644DA8F004F33B4 /* StudentPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentPostTableViewCell.swift; sourceTree = "<group>"; };
+		A1A8102926450876004F33B4 /* StudentPostWriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentPostWriteViewController.swift; sourceTree = "<group>"; };
 		A30D1CA23EBE00543D98B86D /* Pods-CollegeChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollegeChat.debug.xcconfig"; path = "Target Support Files/Pods-CollegeChat/Pods-CollegeChat.debug.xcconfig"; sourceTree = "<group>"; };
 		B9655FCF75E9EDC16CE1A9A7 /* Pods_CollegeChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CollegeChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB9860750605F92EEE73129B /* Pods-CollegeChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollegeChatTests.release.xcconfig"; path = "Target Support Files/Pods-CollegeChatTests/Pods-CollegeChatTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -163,6 +167,8 @@
 				A1A8100D263EEC0B004F33B4 /* StudentClassTableViewCell.swift */,
 				A1A8101A26444F7F004F33B4 /* StudentClasslistTableViewCell.swift */,
 				A1A8101F26445020004F33B4 /* StudentClassesViewController.swift */,
+				A1A810242644DA8F004F33B4 /* StudentPostTableViewCell.swift */,
+				A1A8102926450876004F33B4 /* StudentPostWriteViewController.swift */,
 			);
 			path = CollegeChat;
 			sourceTree = "<group>";
@@ -437,9 +443,11 @@
 				A1A8101B26444F7F004F33B4 /* StudentClasslistTableViewCell.swift in Sources */,
 				47B60826263002A3006FAEEE /* LoginViewController.swift in Sources */,
 				A1806AB4263AFB8900B29400 /* StudentAddClassViewController.swift in Sources */,
+				A1A810252644DA8F004F33B4 /* StudentPostTableViewCell.swift in Sources */,
 				470F2992262A43FB008CA844 /* ViewController.swift in Sources */,
 				470F298E262A43FB008CA844 /* AppDelegate.swift in Sources */,
 				A1806AB9263AFBA300B29400 /* StudentProfileViewController.swift in Sources */,
+				A1A8102A26450877004F33B4 /* StudentPostWriteViewController.swift in Sources */,
 				A1A8100E263EEC0B004F33B4 /* StudentClassTableViewCell.swift in Sources */,
 				470F2990262A43FB008CA844 /* SceneDelegate.swift in Sources */,
 				A1A8102026445020004F33B4 /* StudentClassesViewController.swift in Sources */,

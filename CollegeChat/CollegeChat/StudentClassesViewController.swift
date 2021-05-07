@@ -27,16 +27,7 @@ class StudentClassesViewController: UIViewController, UITableViewDelegate, UITab
         classesTableView.dataSource = self
         classesTableView.reloadData()
     }
-    
-//    override func viewDidAppear(_ animated: Bool) {
-//        super.viewDidAppear(animated)
-//
-//        let user = PFUser.current()!
-//        courses = user["CourseList"].map{$0} as? [String]
-//        print(user["CourseList"]!)
-//        classesTableView.reloadData()
-//    }
-    
+        
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -50,6 +41,20 @@ class StudentClassesViewController: UIViewController, UITableViewDelegate, UITab
         cell.classLabel.text = courses[indexPath.row]
         
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let cell = sender as! UITableViewCell
+        let indexPath = classesTableView.indexPath(for: cell)!
+        
+        let courseId = courses[indexPath.row]
+        
+        let studentPostTable = segue.destination as! StudentPostViewController
+        studentPostTable.course = courseId
+        
+        classesTableView.deselectRow(at: indexPath, animated: true)
+        
     }
     
 
