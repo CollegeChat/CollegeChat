@@ -19,6 +19,25 @@
 		47B6082B263002AD006FAEEE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B6082A263002AD006FAEEE /* SignUpViewController.swift */; };
 		678FF69411B63C0EC6F37F57 /* Pods_CollegeChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98C4DB1C5638CF5D741DE7DC /* Pods_CollegeChatTests.framework */; };
 		7381F7C181F4FE656A2EDECC /* Pods_CollegeChat_CollegeChatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6730A1B4DE305157911F51C3 /* Pods_CollegeChat_CollegeChatUITests.framework */; };
+		A124E0272646279F00B32690 /* AppAdminAddCollegeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A124E0262646279F00B32690 /* AppAdminAddCollegeViewController.swift */; };
+		A124E0382646282400B32690 /* AppAdminViewCollegesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A124E02B2646282300B32690 /* AppAdminViewCollegesTableViewController.swift */; };
+		A124E0392646282400B32690 /* AppAdminCollegeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A124E02C2646282300B32690 /* AppAdminCollegeTableViewCell.swift */; };
+		A124E03A2646282400B32690 /* AppAdminUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A124E02D2646282400B32690 /* AppAdminUsersViewController.swift */; };
+		A124E03B2646282400B32690 /* AppAdminViewCollegeAdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A124E02E2646282400B32690 /* AppAdminViewCollegeAdminViewController.swift */; };
+		A124E03C2646282400B32690 /* AppAdminViewAppAdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A124E02F2646282400B32690 /* AppAdminViewAppAdminViewController.swift */; };
+		A124E03D2646282400B32690 /* AppAdminEditCollegeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A124E0302646282400B32690 /* AppAdminEditCollegeViewController.swift */; };
+		A124E03E2646282400B32690 /* AppAdminUsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A124E0312646282400B32690 /* AppAdminUsersTableViewController.swift */; };
+		A124E03F2646282400B32690 /* AppAdminHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A124E0322646282400B32690 /* AppAdminHomeTableViewCell.swift */; };
+		A124E0402646282400B32690 /* AppAdminHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A124E0332646282400B32690 /* AppAdminHomeViewController.swift */; };
+		A124E0412646282400B32690 /* AppAdminCreateCollegeAdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A124E0342646282400B32690 /* AppAdminCreateCollegeAdminViewController.swift */; };
+		A124E0422646282400B32690 /* AppAdminEditUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A124E0352646282400B32690 /* AppAdminEditUserViewController.swift */; };
+		A124E0432646282400B32690 /* AppAdminUsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A124E0362646282400B32690 /* AppAdminUsersTableViewCell.swift */; };
+		A124E0442646282400B32690 /* AppAdminCreateAppAdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A124E0372646282400B32690 /* AppAdminCreateAppAdminViewController.swift */; };
+		A124E049264628B700B32690 /* AddClassCollegeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A124E048264628B700B32690 /* AddClassCollegeViewController.swift */; };
+		A124E051264628F900B32690 /* CollegeClassDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A124E04D264628F800B32690 /* CollegeClassDetailsViewController.swift */; };
+		A124E052264628F900B32690 /* CollegeAdminTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A124E04E264628F800B32690 /* CollegeAdminTableViewController.swift */; };
+		A124E053264628F900B32690 /* CollegeAdminTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A124E04F264628F800B32690 /* CollegeAdminTableViewCell.swift */; };
+		A124E054264628F900B32690 /* CollegeSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A124E050264628F800B32690 /* CollegeSettingsViewController.swift */; };
 		A1806AB4263AFB8900B29400 /* StudentAddClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1806AB3263AFB8900B29400 /* StudentAddClassViewController.swift */; };
 		A1806AB9263AFBA300B29400 /* StudentProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1806AB8263AFBA300B29400 /* StudentProfileViewController.swift */; };
 		A1806ACB263B862000B29400 /* StudentClassListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1806ACA263B862000B29400 /* StudentClassListViewController.swift */; };
@@ -69,6 +88,25 @@
 		4DBE370A57FABBF56145454A /* Pods-CollegeChat-CollegeChatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollegeChat-CollegeChatUITests.debug.xcconfig"; path = "Target Support Files/Pods-CollegeChat-CollegeChatUITests/Pods-CollegeChat-CollegeChatUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6730A1B4DE305157911F51C3 /* Pods_CollegeChat_CollegeChatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CollegeChat_CollegeChatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C4DB1C5638CF5D741DE7DC /* Pods_CollegeChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CollegeChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A124E0262646279F00B32690 /* AppAdminAddCollegeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAdminAddCollegeViewController.swift; sourceTree = "<group>"; };
+		A124E02B2646282300B32690 /* AppAdminViewCollegesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAdminViewCollegesTableViewController.swift; sourceTree = "<group>"; };
+		A124E02C2646282300B32690 /* AppAdminCollegeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAdminCollegeTableViewCell.swift; sourceTree = "<group>"; };
+		A124E02D2646282400B32690 /* AppAdminUsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAdminUsersViewController.swift; sourceTree = "<group>"; };
+		A124E02E2646282400B32690 /* AppAdminViewCollegeAdminViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAdminViewCollegeAdminViewController.swift; sourceTree = "<group>"; };
+		A124E02F2646282400B32690 /* AppAdminViewAppAdminViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAdminViewAppAdminViewController.swift; sourceTree = "<group>"; };
+		A124E0302646282400B32690 /* AppAdminEditCollegeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAdminEditCollegeViewController.swift; sourceTree = "<group>"; };
+		A124E0312646282400B32690 /* AppAdminUsersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAdminUsersTableViewController.swift; sourceTree = "<group>"; };
+		A124E0322646282400B32690 /* AppAdminHomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAdminHomeTableViewCell.swift; sourceTree = "<group>"; };
+		A124E0332646282400B32690 /* AppAdminHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAdminHomeViewController.swift; sourceTree = "<group>"; };
+		A124E0342646282400B32690 /* AppAdminCreateCollegeAdminViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAdminCreateCollegeAdminViewController.swift; sourceTree = "<group>"; };
+		A124E0352646282400B32690 /* AppAdminEditUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAdminEditUserViewController.swift; sourceTree = "<group>"; };
+		A124E0362646282400B32690 /* AppAdminUsersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAdminUsersTableViewCell.swift; sourceTree = "<group>"; };
+		A124E0372646282400B32690 /* AppAdminCreateAppAdminViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAdminCreateAppAdminViewController.swift; sourceTree = "<group>"; };
+		A124E048264628B700B32690 /* AddClassCollegeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddClassCollegeViewController.swift; sourceTree = "<group>"; };
+		A124E04D264628F800B32690 /* CollegeClassDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollegeClassDetailsViewController.swift; sourceTree = "<group>"; };
+		A124E04E264628F800B32690 /* CollegeAdminTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollegeAdminTableViewController.swift; sourceTree = "<group>"; };
+		A124E04F264628F800B32690 /* CollegeAdminTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollegeAdminTableViewCell.swift; sourceTree = "<group>"; };
+		A124E050264628F800B32690 /* CollegeSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollegeSettingsViewController.swift; sourceTree = "<group>"; };
 		A1806AB3263AFB8900B29400 /* StudentAddClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAddClassViewController.swift; sourceTree = "<group>"; };
 		A1806AB8263AFBA300B29400 /* StudentProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentProfileViewController.swift; sourceTree = "<group>"; };
 		A1806ACA263B862000B29400 /* StudentClassListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentClassListViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +192,20 @@
 				470F298D262A43FB008CA844 /* AppDelegate.swift */,
 				470F298F262A43FB008CA844 /* SceneDelegate.swift */,
 				470F2991262A43FB008CA844 /* ViewController.swift */,
+				A124E0262646279F00B32690 /* AppAdminAddCollegeViewController.swift */,
+				A124E02C2646282300B32690 /* AppAdminCollegeTableViewCell.swift */,
+				A124E0372646282400B32690 /* AppAdminCreateAppAdminViewController.swift */,
+				A124E0342646282400B32690 /* AppAdminCreateCollegeAdminViewController.swift */,
+				A124E0302646282400B32690 /* AppAdminEditCollegeViewController.swift */,
+				A124E0352646282400B32690 /* AppAdminEditUserViewController.swift */,
+				A124E0322646282400B32690 /* AppAdminHomeTableViewCell.swift */,
+				A124E0332646282400B32690 /* AppAdminHomeViewController.swift */,
+				A124E0362646282400B32690 /* AppAdminUsersTableViewCell.swift */,
+				A124E0312646282400B32690 /* AppAdminUsersTableViewController.swift */,
+				A124E02D2646282400B32690 /* AppAdminUsersViewController.swift */,
+				A124E02F2646282400B32690 /* AppAdminViewAppAdminViewController.swift */,
+				A124E02E2646282400B32690 /* AppAdminViewCollegeAdminViewController.swift */,
+				A124E02B2646282300B32690 /* AppAdminViewCollegesTableViewController.swift */,
 				470F2993262A43FB008CA844 /* Main.storyboard */,
 				470F2996262A43FC008CA844 /* Assets.xcassets */,
 				470F2998262A43FC008CA844 /* LaunchScreen.storyboard */,
@@ -169,6 +221,11 @@
 				A1A8101F26445020004F33B4 /* StudentClassesViewController.swift */,
 				A1A810242644DA8F004F33B4 /* StudentPostTableViewCell.swift */,
 				A1A8102926450876004F33B4 /* StudentPostWriteViewController.swift */,
+				A124E048264628B700B32690 /* AddClassCollegeViewController.swift */,
+				A124E04F264628F800B32690 /* CollegeAdminTableViewCell.swift */,
+				A124E04E264628F800B32690 /* CollegeAdminTableViewController.swift */,
+				A124E04D264628F800B32690 /* CollegeClassDetailsViewController.swift */,
+				A124E050264628F800B32690 /* CollegeSettingsViewController.swift */,
 			);
 			path = CollegeChat;
 			sourceTree = "<group>";
@@ -439,19 +496,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A124E0272646279F00B32690 /* AppAdminAddCollegeViewController.swift in Sources */,
+				A124E053264628F900B32690 /* CollegeAdminTableViewCell.swift in Sources */,
+				A124E03F2646282400B32690 /* AppAdminHomeTableViewCell.swift in Sources */,
 				A1806AD0263B8A3100B29400 /* StudentPostViewController.swift in Sources */,
+				A124E0382646282400B32690 /* AppAdminViewCollegesTableViewController.swift in Sources */,
+				A124E0442646282400B32690 /* AppAdminCreateAppAdminViewController.swift in Sources */,
 				A1A8101B26444F7F004F33B4 /* StudentClasslistTableViewCell.swift in Sources */,
+				A124E054264628F900B32690 /* CollegeSettingsViewController.swift in Sources */,
+				A124E0432646282400B32690 /* AppAdminUsersTableViewCell.swift in Sources */,
+				A124E0392646282400B32690 /* AppAdminCollegeTableViewCell.swift in Sources */,
+				A124E03D2646282400B32690 /* AppAdminEditCollegeViewController.swift in Sources */,
+				A124E0422646282400B32690 /* AppAdminEditUserViewController.swift in Sources */,
+				A124E03A2646282400B32690 /* AppAdminUsersViewController.swift in Sources */,
 				47B60826263002A3006FAEEE /* LoginViewController.swift in Sources */,
 				A1806AB4263AFB8900B29400 /* StudentAddClassViewController.swift in Sources */,
+				A124E0402646282400B32690 /* AppAdminHomeViewController.swift in Sources */,
 				A1A810252644DA8F004F33B4 /* StudentPostTableViewCell.swift in Sources */,
 				470F2992262A43FB008CA844 /* ViewController.swift in Sources */,
 				470F298E262A43FB008CA844 /* AppDelegate.swift in Sources */,
+				A124E0412646282400B32690 /* AppAdminCreateCollegeAdminViewController.swift in Sources */,
+				A124E052264628F900B32690 /* CollegeAdminTableViewController.swift in Sources */,
 				A1806AB9263AFBA300B29400 /* StudentProfileViewController.swift in Sources */,
+				A124E049264628B700B32690 /* AddClassCollegeViewController.swift in Sources */,
+				A124E03B2646282400B32690 /* AppAdminViewCollegeAdminViewController.swift in Sources */,
 				A1A8102A26450877004F33B4 /* StudentPostWriteViewController.swift in Sources */,
 				A1A8100E263EEC0B004F33B4 /* StudentClassTableViewCell.swift in Sources */,
 				470F2990262A43FB008CA844 /* SceneDelegate.swift in Sources */,
 				A1A8102026445020004F33B4 /* StudentClassesViewController.swift in Sources */,
+				A124E03C2646282400B32690 /* AppAdminViewAppAdminViewController.swift in Sources */,
 				A1806ACB263B862000B29400 /* StudentClassListViewController.swift in Sources */,
+				A124E03E2646282400B32690 /* AppAdminUsersTableViewController.swift in Sources */,
+				A124E051264628F900B32690 /* CollegeClassDetailsViewController.swift in Sources */,
 				47B6082B263002AD006FAEEE /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

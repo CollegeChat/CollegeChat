@@ -48,12 +48,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                     self.performSegue(withIdentifier: "CollegeAdminSegue", sender: nil)
                 }
             } else {
-                // print("Error: \(error?.localizedDescription)")
                 if let descrip = error?.localizedDescription {
                     self.displayErrorMessage(message: descrip)
                 }
             }
-            
         }
     }
     

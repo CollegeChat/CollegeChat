@@ -8,6 +8,7 @@ target 'CollegeChat' do
   # Pods for CollegeChat
   pod 'Parse'
   pod 'AlamofireImage'
+  pod 'MBProgressHUD'
   
 
   target 'CollegeChatTests' do
