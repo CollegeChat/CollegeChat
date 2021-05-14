@@ -13,9 +13,9 @@ class StudentPostViewController: UIViewController,UITableViewDelegate,UITableVie
 
     @IBOutlet weak var postTableView: UITableView!
     var course: String!
+    var posts = [PFObject]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         navigationItem.title? = course
         
@@ -26,12 +26,41 @@ class StudentPostViewController: UIViewController,UITableViewDelegate,UITableVie
         // Do any additional setup after loading the view.
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let query = PFQuery(className: "Posts")
+        query.whereKey("ChatRoomName", equalTo: course!)
+        query.findObjectsInBackground { (postObjects:[PFObject]?, error:Error?) in
+            if let error = error{
+                print(error.localizedDescription)
+            } else if let postObjects = postObjects {
+                print("Successfully retrieved \(postObjects.count) posts.")
+                self.posts = postObjects
+                print(postObjects)
+                
+            }
+            self.postTableView.reloadData()
+
+        
+    }
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return posts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        let cell = postTableView.dequeueReusableCell(withIdentifier: "StudentPostTableViewCell") as! StudentPostTableViewCell
+        print(indexPath.row)
+        let singlePost = posts[indexPath.row]
+        let user = singlePost["author"] as! PFUser
+        print(user)
+        //cell.authorNameLabel.text = user.username
+        
+        
+        
+        
         return cell
     }
     

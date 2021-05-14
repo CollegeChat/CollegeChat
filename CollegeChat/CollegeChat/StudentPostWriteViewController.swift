@@ -13,8 +13,12 @@ class StudentPostWriteViewController: UIViewController {
     var className:String!
     
     @IBOutlet weak var postWriteTextField: UITextField!
+    
+    @IBOutlet weak var titleTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print("name..." + className)
 
         // Do any additional setup after loading the view.
     }
@@ -23,8 +27,23 @@ class StudentPostWriteViewController: UIViewController {
     @IBAction func onsubmit(_ sender: Any) {
         
         let post = PFObject(className: "Posts")
-        post["className"] = className
+        post["ChatRoomName"] = self.className as String
         post["content"] = postWriteTextField.text!
+        post["author"] = PFUser.current()
+        post["title"] = titleTextField.text!
+        
+        
+        
+        post.saveInBackground { (success, error) in
+            if success {
+                self.dismiss(animated: true, completion: nil)
+                print("Saved!")
+                
+            } else {
+                print("error!")
+            }
+        }
+                
         
         
     }

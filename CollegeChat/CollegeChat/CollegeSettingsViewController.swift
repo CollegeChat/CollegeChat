@@ -22,6 +22,12 @@ class CollegeSettingsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func onLogout(_ sender: Any) {
+        AddClassViewController().logout()
+        
+    }
+    
+    
     @IBAction func onSave(_ sender: Any) {
         MBProgressHUD.showAdded(to: self.view, animated: true)
         
