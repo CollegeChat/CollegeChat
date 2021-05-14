@@ -1268,7 +1268,13 @@
                         <viewLayoutGuide key="safeArea" id="97B-dN-lRb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Exp-Bz-sV4"/>
+                    <navigationItem key="navigationItem" id="Exp-Bz-sV4">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="LJ1-oS-ybm">
+                            <connections>
+                                <action selector="onLogout:" destination="6Tx-0o-hgL" id="j7v-PO-vbB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="BOb-Sy-O0U" id="Oe5-2E-eJB"/>
                     </connections>

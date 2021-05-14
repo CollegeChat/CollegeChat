@@ -21,7 +21,6 @@ class StudentPostViewController: UIViewController,UITableViewDelegate,UITableVie
         
         postTableView.delegate = self
         postTableView.dataSource = self
-        //createPostNetwork()
         postTableView.reloadData()
 
         // Do any additional setup after loading the view.
@@ -36,38 +35,15 @@ class StudentPostViewController: UIViewController,UITableViewDelegate,UITableVie
         return cell
     }
     
-//    func createPostNetwork() -> Void {
-//
-//        let post = PFObject(className: "Posts")
-//        post["className"] = course!
-//        post["author"] = PFUser.current()
-////        post["title"] as! String
-////        post["content"] as! String
-////        post["postFile"] as! FILE
-//
-//
-//        let comment = PFObject(className: "Comment")
-//        comment["eachPost"] = post
-//        comment["author"] = PFUser.current()
-//
-//        let invitecodeQuery = PFQuery(className: "Chatroom")
-//        invitecodeQuery.whereKey("chatName", equalTo: course!)
-//        invitecodeQuery.getFirstObjectInBackground {(chatroomObject: PFObject?, error: Error?) in
-//            if let error = error {
-//                print(error.localizedDescription)
-//            } else if let chatroomObject = chatroomObject {
-//                let inviteCode = chatroomObject["inviteCode"] as! String
-//                post["classId"] = inviteCode
-//            }
-//        }
-//        comment.saveInBackground()
-//
-//
-//
-//
-//    }
-//
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let postWriteView = segue.destination as! StudentPostWriteViewController
+        postWriteView.className = course
+        
+        
+        
+    }
+        
     
     
     /*

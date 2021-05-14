@@ -25,6 +25,13 @@ class AppAdminHomeViewController: ViewController, UITableViewDelegate, UITableVi
     
     
     
+    @IBAction func onLogout(_ sender: Any) {
+        
+        AddClassViewController().logout()
+        
+    }
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3 // Since we are only displaying 3 columns
     }

@@ -6,9 +6,12 @@
 //
 
 import UIKit
+import Parse
 
 class StudentPostWriteViewController: UIViewController {
 
+    var className:String!
+    
     @IBOutlet weak var postWriteTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +22,9 @@ class StudentPostWriteViewController: UIViewController {
 
     @IBAction func onsubmit(_ sender: Any) {
         
+        let post = PFObject(className: "Posts")
+        post["className"] = className
+        post["content"] = postWriteTextField.text!
         
         
     }
