@@ -22,30 +22,31 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         //Below is the stay logged in functionality, I just put it for student scene because current now accountType is student
         if PFUser.current() != nil {
             let main = UIStoryboard(name: "Main", bundle: nil)
-            let studentController = main.instantiateViewController(withIdentifier: "StudnetController")
-            window?.rootViewController = studentController
+//            let studentController = main.instantiateViewController(withIdentifier: "StudnetController")
+//            window?.rootViewController = studentController
+            let user = PFUser.current()
+        
+        
+            let accountType = user!["accountType"] as? String
+            if(accountType == "App Admin") {
+
+                let appAdminController = main.instantiateViewController(withIdentifier: "AppAdminController")
+                window?.rootViewController = appAdminController
+
+            }else if accountType == "College Admin" {
+                let collegeAdminController = main.instantiateViewController(withIdentifier: "CollegeAdminController")
+                window?.rootViewController = collegeAdminController
+            } else if accountType == "Instructor" {
+
+                let instructorController = main.instantiateViewController(withIdentifier: "InstructorController")
+                window?.rootViewController = instructorController
+
+            } else if accountType == "Student" {
+
+                let studentController = main.instantiateViewController(withIdentifier: "StudentController")
+                window?.rootViewController = studentController
+            }
         }
-        
-        
-//            let accountType = user!["accountType"] as? String
-//            if(accountType == "App Admin") {
-//
-//                let appAdminController = main.instantiateViewController(withIdentifier: "AppAdminController")
-//                window?.rootViewController = appAdminController
-//
-//            }else if accountType == "College Admin" {
-//                let collegeAdminController = main.instantiateViewController(withIdentifier: "CollegeAdminController")
-//                window?.rootViewController = collegeAdminController
-//            } else if accountType == "Instructor" {
-//
-//                let instructorController = main.instantiateViewController(withIdentifier: "InstructorController")
-//                window?.rootViewController = instructorController
-//
-//            } else if accountType == "Student" {
-//
-//                let studentController = main.instantiateViewController(withIdentifier: "StudnetController")
-//                window?.rootViewController = studentController
-//            }
             
         }
 
